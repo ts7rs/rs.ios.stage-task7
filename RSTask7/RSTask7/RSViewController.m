@@ -4,6 +4,12 @@
 //
 //  Created by Taisia Kataieva on 2.7.21..
 //
+/*
+ Добрый день, уважаемые проверяющие)
+ Заранее приношу извинения за свой код.
+ Также при первом клике на textfield, клавиатура задерживается на 5-6 секунд (по крайней мере, на моем устройстве). Я не смогла понять, почему так происходит, если вы увидите причину этой задержки в коде и подскажете, что посмотреть, что бы поправить, буду очень признательна! Если причина не ясна, пожалуйста, наберитесь терпения - клавиатура все-таки появится))
+ Спасибо, что уделили время проверке задания. Хорошего дня)
+ */
 
 #import "RSViewController.h"
 
@@ -414,14 +420,11 @@
             if (![myLabelSecure.text isEqualToString:@"_"]){
             myLabelSecure.text = [myLabelSecure.text stringByAppendingString:@"3"];
             }
-            if (myLabelSecure.text.length == 3){
+            if (myLabelSecure.text.length == 3 || myLabelSecure.text.length > 3){
                 self.myLabelSecure.text = @"_";
                 break;
             }
-            break;
-        default:
-            
-            break;
+           
     }
 }
 
@@ -476,4 +479,3 @@
 */
 
 @end
-
